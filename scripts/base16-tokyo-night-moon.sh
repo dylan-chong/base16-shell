@@ -4,7 +4,7 @@
 # Tokyo Night Moon scheme by Folke (https://github.com/folke/tokyonight.nvim)
 export BASE16_THEME=tokyo-night-moon
 
-color00="1e/20/30" # Base 00 - Black
+color00="22/24/36" # Base 00 - Black
 color01="ff/75/7f" # Base 08 - Red
 color02="c3/e8/8d" # Base 0B - Green
 color03="ff/c7/77" # Base 0A - Yellow
@@ -27,7 +27,7 @@ color19="2d/30/49" # Base 02
 color20="82/8b/b8" # Base 04
 color21="a9/b1/d6" # Base 06
 color_foreground="c8/d3/f5" # Base 05
-color_background="1e/20/30" # Base 00
+color_background="22/24/36" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -80,12 +80,12 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg c8d3f5 # foreground
-  put_template_custom Ph 1e2030 # background
+  put_template_custom Ph 222436 # background
   put_template_custom Pi c8d3f5 # bold color
   put_template_custom Pj 2d3049 # selection color
   put_template_custom Pk c8d3f5 # selected text color
   put_template_custom Pl c8d3f5 # cursor
-  put_template_custom Pm 1e2030 # cursor text
+  put_template_custom Pm 222436 # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
