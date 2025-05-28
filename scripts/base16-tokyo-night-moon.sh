@@ -26,7 +26,7 @@ color18="1e/20/30" # Base 01
 color19="2d/30/49" # Base 02
 color20="82/8b/b8" # Base 04
 color21="a9/b1/d6" # Base 06
-color_foreground="c8/d3/f5" # Base 05
+color_foreground="78/7c/99" # Base 05
 color_background="22/24/36" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -79,12 +79,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg c8d3f5 # foreground
+  put_template_custom Pg 787c99 # foreground
   put_template_custom Ph 222436 # background
-  put_template_custom Pi c8d3f5 # bold color
+  put_template_custom Pi 787c99 # bold color
   put_template_custom Pj 2d3049 # selection color
-  put_template_custom Pk c8d3f5 # selected text color
-  put_template_custom Pl c8d3f5 # cursor
+  put_template_custom Pk 787c99 # selected text color
+  put_template_custom Pl 787c99 # cursor
   put_template_custom Pm 222436 # cursor text
 else
   put_template_var 10 $color_foreground
